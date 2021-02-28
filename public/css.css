@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+    font: normal normal normal 16px "Trebuchet MS", Arial, Times;
+    color: #000000;
+    }
+
+    /* ������ �������� */
+    .chat {
+    height: 500px;
+    overflow: auto; /* ��� ��������� ���������� ������ ��������� */
+    position: relative; /* ��� ��������� �������� ������ � ����, �� ���������� �������� */
+    text-align: left;
+    border: solid #818181 1px;
+        padding: 20px;
+        background-color: steelblue;
+        font-size: 17px;
+        width: 74%;
+    }
+    .chat_ls {
+        height: 500px;
+        overflow: auto; /* ��� ��������� ���������� ������ ��������� */
+        position: relative; /* ��� ��������� �������� ������ � ����, �� ���������� �������� */
+        text-align: left;
+        border: solid #818181 1px;
+        padding: 20px;
+        background-color: steelblue;
+        font-size: 17px;
+        width: 74%;
+    }
+    .users_online {
+        width: 22%;
+        float: right;
+        height: 540px;
+        background-color: steelblue;
+        overflow: auto;
+        margin-top: -541px;
+        border: 1px solid #999;
+        border-radius: 5px;
+    }
+
+    .users_online span {
+        text-align: center;
+        padding-left: 24%;
+        color: #fff;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(234, 226, 226, 0.32);
+        padding-right: 36%;
+        padding-bottom: 9px;
+        margin-left: 10%;
+    }
+    .users_online ul {
+        padding: 36px;
+    }
+    .users_online ul li {
+        color: #fff;
+        font-size: 20px;
+        font-family: Lobster;
+        letter-spacing: 4px;
+        height: 27px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #4CF;
+    }
+    #pac_text {
+        width: 67%;
+        font: normal normal normal 16px "Trebuchet MS", Arial, Times;
+        border: solid #818181 1px;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .chat div {
+    position: absolute; /* �������� ������� ���� �� ������� */
+    }
+
+    .chat span {
+    display: block;
+    }
+    #pac_name {
+        display: none;
+    }
+    #otp {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    input[type=text],textarea {
+    width: 100%;
+    font: normal normal normal 16px "Trebuchet MS", Arial, Times;
+    border: solid #818181 1px;
+        height: 63px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    /* ��� CSS 3 */
+    .r4 {
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+
+
+
+
+#users_list {
+    width: 95%;
+    padding: 30px;
+}
+#users_list .user_dialog {
+    width: 70%;
+    height: 61px;
+    font-size: 27px;
+    border: 2px solid #87CEEB;
+    border-radius: 8px;
+    padding: 7px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    background-color: #529ACA;
+    position: relative;
+}
+#users_list .user_dialog #a_sms {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 60%;
+    cursor: pointer;
+}
+#users_list .user_dialog #a_chs {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 55%;
+    cursor: pointer;
+}
+.main {
+    color: #eae4e4;
+    font-size: 21px;
+    text-align: right;
+    width: 40%;
+    margin-left: 56%;
+    border: 1px solid;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+
+}
+.friend {
+    color: #00ffaf;
+    text-align: left;
+    font-size: 21px;
+    border: 1px solid;
+    width: 40%;
+    border-radius: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#p_login {
+    font-size: 35px;
+    font-family: fantasy;
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    margin-top: 28px;
+}
+
+#vhod {
+    width: 288px;
+    height: 350px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    margin-left: 20%;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: steelblue;
+    color: #ffffff;
+}
+#reg {
+    width: 288px;
+    height: 480px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    margin-left: 56%;
+    margin-top: -373px;
+    padding: 10px;
+    background-color: steelblue;
+    color: #ffffff;
+}
+.log_in {
+    width: 204px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 24px;
+    height: 34px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 9px;
+}
+
+.password {
+    width: 204px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 24px;
+    height: 34px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 9px;
+}
+
+
+#vhod #vhod_done {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 38px;
+    color: #111;
+    font-size: 21px;
+    font-family: fantasy;
+    cursor: pointer;
+}
+html {
+    background-color: cornflowerblue;
+}
+
+#reg #reg_done {
+    width: 223px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 38px;
+    color: #111;
+    font-size: 21px;
+    font-family: fantasy;
+    cursor: pointer;
+}
+#name_reg {
+    width: 204px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 24px;
+    height: 34px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 9px;
+}
+#family_reg {
+    width: 204px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 24px;
+    height: 34px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 9px;
+}
+
+
+#a_group_chat {
+    display: block;
+    width: 300px;
+    background-color: #999;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 33px;
+    text-decoration: none;
+    padding-left: 58px;
+    color: #fff;
+    box-shadow: 5px 17px 20px 4px #fff;
+    margin-left: 23%;
+    margin-top: 10%;
+}
+#a_ls {
+    display: block;
+    width: 327px;
+    background-color: #999;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 33px;
+    text-decoration: none;
+    padding-left: 46px;
+    color: #fff;
+    box-shadow: 5px 17px 20px 4px #fff;
+    margin-left: 55%;
+    margin-top: -3%;
+}
+
+#user {
+    width: 100%;
+    height: 69px;
+    background-color: skyblue;
+}
+#user #image_user {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: url("../images/user.png") no-repeat;
+    border: 1px solid #555;
+    background-size: 100%;
+}
+#user #name_user {
+    position: absolute;
+    top: 4px;
+    left: 91px;
+    font-size: 26px;
+    color: #111;
+}
+#user #vihod {
+    border: none;
+    background: url("../images/vihod.png") no-repeat;
+    color: #111;
+    font-size: 27px;
+    text-decoration: underline;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 49px;
+    padding-left: 38px;
+    background-size: 29%;
+}
+
+#reg_done {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
